@@ -69,7 +69,7 @@ a {
 }
 
 body {
-  background: #3A338F;
+  background: #4DBB6C;
 }
 
 .shapka {
@@ -80,7 +80,7 @@ body {
   position: sticky;
   top: 0;
   opacity: 70%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .shapka__logo {
@@ -95,11 +95,16 @@ body {
 
 .shapka__vibor_verh {
   position: fixed;
-  top: 30px;
+  top: -20px;
   left: 150px;
   font-size: 40px;
   color: #010101;
   font-family: "Inter", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   font-weight: 400;
   line-height: normal;
 }
@@ -151,7 +156,7 @@ body {
 
 .shapka:hover {
   opacity: 100%;
-  background-color: rgba(164, 156, 253, 0.8);
+  background-color: rgb(156, 60, 60);
 }
 
 .shapka__main:hover {
@@ -160,7 +165,6 @@ body {
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
           box-shadow: 3px 3px 7px 3px black;
-  width: 50px;
 }
 
 .shapka__logo img:hover {
@@ -171,11 +175,91 @@ body {
 }
 
 .FIO {
-  margin: 30px;
-  padding: 0 20px 0 20px;
+  padding: 40px 20px 0 20px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  z-index: -1;
 }
 
 .FIO_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 50px;
+  font-size: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0px 30px 0 30px;
+  background-color: rgb(183, 218, 167);
+  color: #005546;
+  font-family: Century Schoolbook;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  max-height: 600px;
+  min-width: 1000px;
+}
+
+.university {
+  padding: 40px 68px 0 0px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  z-index: -2;
+}
+.university_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 50px 0 20px;
+  font-size: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0px 30px 0 30px;
+  background-color: rgb(183, 218, 167);
+  color: #005546;
+  font-family: Century Schoolbook;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  z-index: -2;
+}
+
+.vizov {
+  margin: 20px auto;
+}
+
+.text {
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(183, 218, 167);
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+          box-shadow: 3px 3px 7px 3px black;
+  width: 400px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.karta {
+  display: block;
+  padding: 20px 0px 0px 30%;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(195, 87, 87);
+  border-radius: 30px;
+  font-size: 40px;
+  width: 350px;
+  border: 3px solid black;
 }

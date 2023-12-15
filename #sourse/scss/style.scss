@@ -67,12 +67,13 @@ body{
 }
 .shapka__vibor_verh{
     position: fixed;
-    top:30px;
+    top:-20px;
     left:150px;
     font-size:40px;
     color: #010101;
     font-family: 'Inter', sans-serif;
-    
+    display:flex;
+    flex-wrap:nowrap;
     font-weight: 400;
     line-height: normal;
 }
@@ -211,7 +212,7 @@ body{
     background: rgba(54, 146, 85, 0.6);
     border-radius: 15px;
     box-shadow: 3px 3px 7px 3px black;
-    width: 50px;
+    
 }
 .shapka__uslugi:hover{
     opacity: 100%;
