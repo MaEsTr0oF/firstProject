@@ -38,26 +38,30 @@ ul li{list-style: none;}/*очистка стилей маркированных
 img{vertical-align: top;}/*выравнивет картинку по вертикали*/
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}/*обнуление всех заголовков*/
 //-------------------------------------------------------------------------------
-a{
+aa{
     color:black;
 }
 
 body{
-    background: #4DBB6C;
+    background: #3A338F;
+    width: 1400px;
+    margin: 0px auto;
 }
 .shapka{
+    
     width: 100%;
     height: 100px;
     border: 3px solid black;
-    background: rgba(236, 219, 219, 0.50);
+    background:rgba(236, 219, 219, 0.50);
     position: sticky;
     top:0;
     opacity: 70%;
-    z-index: 1;
+    z-index: 0;
+    
 
 }
 .shapka__logo {
-    position: static;
+    
 
 }
 .shapka__logo img{
@@ -66,38 +70,41 @@ body{
   filter: drop-shadow(5px 5px 5px #222);
 }
 .shapka__vibor_verh{
-    position: fixed;
-    top:-20px;
-    left:150px;
+    
     font-size:40px;
     color: #010101;
     font-family: 'Inter', sans-serif;
-    display:flex;
+    height: 100px;
     flex-wrap:nowrap;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    gap:70px;
 }
-.shapka__main{
-    margin:50px;
-    opacity: 30%;
-    
+.shapka__main{   
+}
+.vibor_knopki{
+    margin: 25px;
+    display: flex;
+    gap:100px;
 }
 .shapka__profil{
-    margin:50px;
+    
+    opacity: 30%;
 }
 .shapka__uslugi{
-    margin:50px;
+    
     opacity: 30%;
 }
 .shapka__button{
-    position: fixed;
-    right:0;
-    top:20px;
+    margin: 8px 0 0 150px;
+    width: 200px;
+    height: 80px;
     font-size:30px;
     background: rgba(103, 156, 62,0.5);
     border:3px solid black;
     border-radius:40px;
-    width: 200px;
+    
 }
 .shapka__profil:hover{
      text-decoration: line-through;
@@ -202,7 +209,7 @@ min-width: 1000px;
 }
 .karta {
     display: block;
-    padding: 20px 0px 0px 30%;
+    padding: 20px 0px 0px 23%;
 }
 .button{
     display: block;
