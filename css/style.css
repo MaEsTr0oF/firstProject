@@ -70,14 +70,40 @@ a {
 
 html,body {
   height: max-content;
+
 }
 
 body {
+  
   background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0.00) 100%);
-  width: 1400px;
   margin: 0px auto;
-  padding:0 15px;
+  
 }
+.container{
+    margin: 0 auto;
+    max-width: 1864px;
+  }
+@media (max-width:1864px){
+  .container{
+    max-width: 1400px;
+  }
+}
+@media (max-width:1400px){
+  .container{
+    max-width: 970px;
+  }
+}
+@media (max-width:992px){
+  .container{
+    max-width: 750px;
+  }
+}
+@media (max-width:767px){
+  .container{
+    max-width: none;
+  }
+}
+
 
 .shapka {
   width: 100%;
@@ -91,7 +117,7 @@ body {
 }
 
 .shapka__logo img {
-  width: 130px;
+  
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
@@ -108,7 +134,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
+  gap: 380px;
 }
 
 .vibor_knopki {
@@ -128,7 +154,7 @@ body {
 }
 
 .shapka__button {
-  margin: 8px 0 0 150px;
+  margin: 8px 0px 0 0;
   width: 200px;
   height: 80px;
   font-size: 30px;
