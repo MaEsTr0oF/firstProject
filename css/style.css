@@ -123,7 +123,7 @@ body {
 }
 
 .shapka__vibor_verh {
-  font-size: 40px;
+  font-size: 280%;
   color: #010101;
   font-family: "Inter", sans-serif;
   height: 100px;
@@ -134,15 +134,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 380px;
+  gap: 22%;
 }
 
 .vibor_knopki {
-  margin: 25px;
+  margin: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  gap: 25%;
 }
 
 .shapka__profil {
@@ -270,7 +270,7 @@ body {
   }
 }
 .stat {
-  font-size: 40px;
+  font-size: 280%;
   border: 3px solid black;
   background: rgba(103, 156, 62, 0.7);
   border-radius: 20px;
@@ -279,7 +279,7 @@ body {
   margin: 10px auto;
 }
 .stat1 {
-  font-size: 44px;
+  font-size: 300%;
   border: 3px solid black;
   background: rgba(103, 156, 62, 0.7);
   border-radius: 20px;

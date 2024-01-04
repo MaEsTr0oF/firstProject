@@ -80,6 +80,7 @@ body {
 .container{
     margin: 0 auto;
     max-width: 1864px;
+
   }
 @media (max-width:1864px){
   .container{
@@ -119,7 +120,7 @@ body {
 }
 
 .shapka__vibor_verh {
-  font-size: 40px;
+  font-size: 280%;
   color: #010101;
   font-family: "Inter", sans-serif;
   height: 100px;
@@ -130,15 +131,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 380px;
+  gap: 22%;
 }
 
 .vibor_knopki {
-  margin: 25px;
+  margin: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  gap: 25%;
 }
 .shapka__main{
   opacity: 30%;
@@ -203,25 +204,26 @@ body {
 .scheme {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   font-family: Comfortaa;
-  font-size: 48px;
+  font-size: 330%;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 50px;
+  margin: 2.5%;
+  text-align: center;
 }
 .scheme_head {
   display: block;
   border-radius: 40px;
   border: 3px solid #000;
   background: rgba(252, 255, 92, 0.5);
-  width: 700px;
-  height: 100px;
-  padding: 10px;
+  width: 40%;
+  
+  padding: 1%;
   margin: auto;
 }
 .scheme_arrow {
-  margin: -15px 0 0 0;
-  gap: 250px;
+  margin: -0.8% 0 0 0;
+  gap: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +232,7 @@ body {
           justify-content: center;
 }
 .scheme_headling {
-  margin: 0 40px 0 80px;
+  margin: 0 0 0 0;
   
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,9 +246,9 @@ body {
   border-radius: 40px;
   border: 3px solid #000;
   background: rgba(252, 255, 92, 0.5);
-  width: 400px;
-  height: 130px;
-  padding: 10px;
+  width: 25%;
+  
+  padding: 1%;
   margin: auto;
   text-align: center;
 }
@@ -255,16 +257,16 @@ body {
   border-radius: 40px;
   border: 3px solid #000;
   background: rgba(252, 255, 92, 0.5);
-  width: 500px;
-  height: 130px;
-  padding: 10px;
+  width: 30%;
+  
+  padding: 1%;
   margin: auto;
   text-align: center;
 }
 
 .arrow {
-  margin: -10px 0 0 -15px;
-  gap: 250px;
+  margin: -0.6% 0 0 -0.7%;
+  gap: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +276,7 @@ body {
   opacity: 70%;
 }
 .arrow_1 {
-  gap: 200px;
+  gap: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +285,7 @@ body {
           justify-content: center;
 }
 .arrow_2 {
-  gap: 200px;
+  gap: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,28 +294,28 @@ body {
           justify-content: center;
 }
 .exp {
-  margin: 0px 120px;
+  margin: 0px 4%;
   color: #000;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 50%;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  gap: 3%;
 }
 .exp_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  gap: 8%;/**/
 }
 .exp_right_left h2 {
   color: #000;
   text-align: center;
-  font-size: 30px;
+  font-size: 150%;
   font-weight: 700;
 }
 .exp_right_left {
@@ -323,57 +325,37 @@ body {
   background: linear-gradient(180deg, #FFBE5C 31.17%, rgba(255, 190, 92, 0) 106.81%);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
-  width: 300px;
+  width: 60%;/**/
+
   height: auto;
-  padding: 20px;
+  padding: 1%;
   text-align: center;
 }
 .exp_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 8%;/**/
 }
 
 .knopka {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 230px;
-  margin: 0 0 0 190px;
-}
-.knopka_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 230px;
-}
-.knopka_left_right {
-  display: block;
-}
-.knopka_left_left1 {
-  display: block;
-}
-.knopka_left_right1 {
-  display: block;
-}
-.knopka_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 180px;
+  justify-content: space-between;
+  margin: 0 10%;
 }
 
 .button {
-  padding: 16px 20px;
-  border-radius: 3px;
+  padding: 12% 24px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
   line-height: 1.25;
   background: #FC6E51;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 35%;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   position: relative;

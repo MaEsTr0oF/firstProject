@@ -113,13 +113,13 @@ body {
 }
 
 .shapka__logo img {
- 
+  
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 
 .shapka__vibor_verh {
-  font-size: 40px;
+  font-size: 280%;
   color: #010101;
   font-family: "Inter", sans-serif;
   height: 100px;
@@ -130,15 +130,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 380px;
+  gap: 22%;
 }
 
 .vibor_knopki {
-  margin: 25px;
+  margin: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
+  gap: 25%;
 }
 .shapka__main{
   opacity: 30%;
@@ -202,7 +202,7 @@ body {
 }
 
 .FIO {
-  padding: 40px 20px 0 20px;
+  padding: 2% 1% 0 1.5%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,23 +216,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0 50px;
-  font-size: 40px;
+  margin: 0 2.5%;
+  font-size: 300%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0px 30px 0 30px;
+  padding: 0px 1.8% 0 1.8%;
   background-color: rgb(183, 218, 167);
   color: #005546;
   font-family: Century Schoolbook;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  max-height: 600px;
-  min-width: 920px;
+  
 }
 
 .university {
-  padding: 40px 68px 0 0px;
+  padding: 2% 4% 0 0px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,11 +244,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0 50px 0 20px;
-  font-size: 40px;
+  margin: 0 2.5% 0 1.5%;
+  font-size: 300%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0px 30px 0 30px;
+  padding: 0px 2.5% 0 2.5%;
   background-color: rgb(183, 218, 167);
   color: #005546;
   font-family: Century Schoolbook;
@@ -269,15 +268,15 @@ body {
   background-color: rgb(183, 218, 167);
   -webkit-box-shadow: 3px 3px 7px 3px black;
           box-shadow: 3px 3px 7px 3px black;
-  width: 400px;
-  font-size: 30px;
+  width: 20%;
+  font-size: 300%;
   text-align: center;
   border-radius: 15px;
 }
 
 .karta {
   display: block;
-  padding: 20px 0px 0px 23%;
+  padding: 1.5% 0 0px 28%;
 }
 
 .button {
@@ -286,7 +285,7 @@ body {
   margin-right: auto;
   background-color: rgb(195, 87, 87);
   border-radius: 30px;
-  font-size: 40px;
-  width: 350px;
+  font-size: 300%;
+  width: 20%;
   border: 3px solid black;
 }
