@@ -98,7 +98,7 @@ body {
 }
 @media (max-width:767px){
   .container{
-    max-width: 767;
+    max-width: 767px;
   }
 }.shapka {
   width: 100%;
