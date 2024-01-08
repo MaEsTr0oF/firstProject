@@ -1,0 +1,388 @@
+@charset "UTF-8";
+* { /** Звёздочка обозначает ,что обращаемся ко всем тегам*/
+  padding: 0; /*внутренний отступ*/
+  margin: 0; /*внешний отступ*/
+  border: 0; /*выделение с помощью рамки*/
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /*меняет подсчёт ширины блока*/
+}
+
+/*убираем линии обводки*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+} /*делает эти теги блочными*/
+html, body {
+  height: 100%; /*высота*/
+  width: 100%; /*ширина*/
+  font-size: 100%; /*размер шрифта*/
+  line-height: 1; /*размер отступа сверху и снизу*/
+  font-size: 14px; /*размер шрифта*/
+  -ms-text-size-adjust: 100%; /*для более удобной работы с шрифтом на мобильных устройств*/
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+} /*наследовать семейство шрифта*/
+input::-ms-clear {
+  display: none;
+} /*убирает крестик в интернет экс*/
+button {
+  cursor: pointer;
+} /*убирает отступы для кнопок в файрфоксе*/
+button::-moz-focus-inner {
+  margin: -1px;
+  padding: 0;
+  border-width: 1px;
+} /*уменьшает кнопку в файрфокс*/
+/*Для ссылок запомнить LoVe Fears HAte(снача link потом visited ,focus,hover,active)*/
+a, a:visited {
+  text-decoration: none;
+} /*типизация ссылок*/
+a:hover {
+  text-decoration: none;
+} /*типизация ссылок*/
+ul li {
+  list-style: none;
+} /*очистка стилей маркированных списков*/
+img {
+  vertical-align: top;
+} /*выравнивет картинку по вертикали*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+} /*обнуление всех заголовков*/
+a {
+  color: black;
+}
+
+html,body {
+  height: max-content;
+}
+
+body {
+  background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0.00) 100%);
+  
+  margin: 0px auto;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1864px;
+  }
+@media (max-width:1864px){
+  .container{
+    max-width: 1864px;
+  }
+}
+@media (max-width:1400px){
+  .container{
+    max-width: 1400px;
+  }
+}
+@media (max-width:992px){
+  .container{
+    max-width: 992px;
+  }
+}
+@media (max-width:767px){
+  .container{
+    max-width: 767px;
+  }
+}.shapka {
+  width: 100%;
+  height: 100px;
+  border: 3px solid black;
+  background: rgba(236, 255, 13, 0.70);
+  position: sticky;
+  top: 0;
+  opacity: 70%;
+  z-index: 0;
+}
+
+.shapka__logo img {
+  
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.shapka__vibor_verh {
+  font-size: 280%;
+  color: #010101;
+  font-family: "Inter", sans-serif;
+  height: 100px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-weight: 400;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22%;
+}
+
+.vibor_knopki {
+  margin: 1.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25%;
+}
+.shapka__main{
+  opacity: 30%;
+}
+.shapka__profil {
+  opacity: 30%;
+}
+
+.shapka__uslugi {
+  
+}
+
+.shapka__button {
+  margin: 8px 0px 0 0;
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  background: rgba(103, 156, 62, 0.5);
+  border: 3px solid black;
+  border-radius: 40px;
+}
+
+.shapka__profil:hover {
+  opacity: 100%;
+  background: rgba(54, 146, 85, 0.6);
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka__uslugi:hover {
+  text-decoration: line-through;
+  text-decoration-color: rgb(54, 146, 85);
+}
+
+.shapka__button:hover {
+  opacity: 100%;
+  background: rgb(54, 146, 85);
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka:hover {
+  opacity: 100%;
+  background: rgba(236, 255, 13, 0.7);
+}
+
+.shapka__main:hover {
+  opacity: 100%;
+  background: rgba(54, 146, 85, 0.6);
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka__logo img:hover {
+  -webkit-filter: drop-shadow(10px 10px 10px #222);
+  filter: drop-shadow(10px 10px 10px #222);
+  background-color: rgba(54, 146, 85, 0.6);
+}
+
+.scheme {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  font-family: Comfortaa;
+  font-size: 330%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2.5%;
+  text-align: center;
+}
+.scheme_head {
+  display: block;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: rgba(252, 255, 92, 0.5);
+  width: 40%;
+  
+  padding: 1%;
+  margin: auto;
+}
+.scheme_arrow {
+  margin: -0.8% 0 0 0;
+  gap: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.scheme_headling {
+  margin: 0 0 0 0;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.scheme_headling1 {
+  display: block;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: rgba(252, 255, 92, 0.5);
+  width: 25%;
+  
+  padding: 1%;
+  margin: auto;
+  text-align: center;
+}
+.scheme_headling2 {
+  display: block;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: rgba(252, 255, 92, 0.5);
+  width: 30%;
+  
+  padding: 1%;
+  margin: auto;
+  text-align: center;
+}
+
+.arrow {
+  margin: -0.6% 0 0 -0.7%;
+  gap: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 70%;
+}
+.arrow_1 {
+  gap: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.arrow_2 {
+  gap: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.exp {
+  margin: 0px 4%;
+  color: #000;
+  font-family: Inter;
+  font-size: 50%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+}
+.exp_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8%;/**/
+}
+.exp_right_left h2 {
+  color: #000;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 700;
+}
+.exp_right_left {
+  border-radius: 30px;
+  border: 3px solid #F00;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31.17%, #FFBE5C), color-stop(106.81%, rgba(255, 190, 92, 0)));
+  background: linear-gradient(180deg, #FFBE5C 31.17%, rgba(255, 190, 92, 0) 106.81%);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
+  width: 60%;/**/
+
+  height: auto;
+  padding: 1%;
+  text-align: center;
+}
+.exp_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8%;/**/
+}
+
+.knopka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.button {
+  padding: 12% 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: #FC6E51;
+  text-decoration: none;
+  color: white;
+  font-size: 35%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width 0.3s ease, height 0.3s ease;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.button:focus, .button:hover {
+  background: #fb512e;
+}
+.button:active:after {
+  width: 300px;
+  height: 300px;
+}

@@ -1,0 +1,365 @@
+@charset "UTF-8";
+* { /** Звёздочка обозначает ,что обращаемся ко всем тегам*/
+  padding: 0; /*внутренний отступ*/
+  margin: 0; /*внешний отступ*/
+  border: 0; /*выделение с помощью рамки*/
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /*меняет подсчёт ширины блока*/
+}
+
+/*убираем линии обводки*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+} /*делает эти теги блочными*/
+html, body {
+  height: 100%; /*высота*/
+  width: 100%; /*ширина*/
+  font-size: 100%; /*размер шрифта*/
+  line-height: 1; /*размер отступа сверху и снизу*/
+  font-size: 14px; /*размер шрифта*/
+  -ms-text-size-adjust: 100%; /*для более удобной работы с шрифтом на мобильных устройств*/
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+} /*наследовать семейство шрифта*/
+input::-ms-clear {
+  display: none;
+} /*убирает крестик в интернет экс*/
+button {
+  cursor: pointer;
+} /*убирает отступы для кнопок в файрфоксе*/
+button::-moz-focus-inner {
+  margin: -1px;
+  padding: 0;
+  border-width: 1px;
+} /*уменьшает кнопку в файрфокс*/
+/*Для ссылок запомнить LoVe Fears HAte(снача link потом visited ,focus,hover,active)*/
+a, a:visited {
+  text-decoration: none;
+} /*типизация ссылок*/
+a:hover {
+  text-decoration: none;
+} /*типизация ссылок*/
+ul li {
+  list-style: none;
+} /*очистка стилей маркированных списков*/
+img {
+  vertical-align: top;
+} /*выравнивет картинку по вертикали*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+} /*обнуление всех заголовков*/
+a{
+    color:black;
+}
+
+body{
+    background: #3A338F;
+    width: 1400px;
+    margin: 0px auto;
+}
+.shapka{
+    
+    width: 100%;
+    height: 100px;
+    border: 3px solid black;
+    background:rgba(236, 219, 219, 0.50);
+    position: sticky;
+    top:0;
+    opacity: 70%;
+    z-index: 0;
+    
+
+}
+.shapka__logo {
+    
+
+}
+.shapka__logo img{
+    width: 130px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.shapka__vibor_verh{
+    
+    font-size:40px;
+    color: #010101;
+    font-family: 'Inter', sans-serif;
+    height: 100px;
+    flex-wrap:nowrap;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap:70px;
+}
+.shapka__main{   
+}
+.vibor_knopki{
+    margin: 25px;
+    display: flex;
+    gap:100px;
+}
+.shapka__profil{
+    
+    opacity: 30%;
+}
+.shapka__uslugi{
+    
+    opacity: 30%;
+}
+.shapka__button{
+    margin: 8px 0 0 150px;
+    width: 200px;
+    height: 80px;
+    font-size:30px;
+    background: rgba(103, 156, 62,0.5);
+    border:3px solid black;
+    border-radius:40px;
+    
+}
+.shapka__profil:hover {
+  opacity: 100%;
+  background: rgba(54, 146, 85, 0.6);
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+          box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka__uslugi:hover {
+  text-decoration: line-through;
+  text-decoration-color: rgb(54, 146, 85);
+}
+
+.shapka__button:hover {
+  opacity: 100%;
+  background: rgb(54, 146, 85);
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+          box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka:hover {
+  opacity: 100%;
+  background: rgba(236, 255, 13, 0.70);
+}
+
+.shapka__main:hover {
+  opacity: 100%;
+  background: rgba(54, 146, 85, 0.6);
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 7px 3px black;
+          box-shadow: 3px 3px 7px 3px black;
+}
+
+.shapka__logo img:hover {
+  width: 195px;
+  -webkit-filter: drop-shadow(10px 10px 10px #222);
+  filter: drop-shadow(10px 10px 10px #222);
+  background-color: rgba(54, 146, 85, 0.6);
+}
+//-----------------------------------------------------
+.scheme 
+{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
+  font-family: Comfortaa;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 50px;
+  &_head 
+  {
+  display: block;
+  border-radius: 40px;
+  border: 3px solid #000;
+  background: rgba(252, 255, 92, 0.50); 
+  width: 700px;
+  height: 100px;
+  padding: 10px;
+  margin: auto;
+  }
+   &_arrow 
+   {
+    margin: -15px 0 0 0 ;
+   gap:250px;
+   display:flex;
+   justify-content: center;
+   }
+  &_arrow_left {
+
+  }
+  &_arrow_right {
+
+  }
+  &_headling {
+    margin: 0 0 0 20px ;
+   gap:220px;
+   display:flex;
+   justify-content: center;
+  }
+  &_headling1 {
+    display: block;
+    border-radius: 40px;
+    border: 3px solid #000;
+    background: rgba(252, 255, 92, 0.50); 
+    width: 400px;
+    height: 130px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+  }
+  &_headling2 {
+    display: block;
+    border-radius: 40px;
+    border: 3px solid #000;
+    background: rgba(252, 255, 92, 0.50); 
+    width: 500px;
+    height: 130px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+  }
+}
+.arrow {
+  margin:-10px 0 0 -15px;
+    gap:250px;
+   display:flex;
+   justify-content: center;
+   opacity: 70%;
+  &_1 {
+    gap:200px;
+   display:flex;
+   justify-content: center;
+  }
+  &_left1 {}
+  &_right1 {}
+  &_2 {
+    gap:200px;
+   display:flex;
+   justify-content: center;
+  }
+  &_left2 {}
+  &_right2 {}
+  }
+//-----------------------
+.exp {
+  margin: 0px 0 0 -45px;
+  color: #000;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap:80px;
+  &_left {
+    display: flex;
+    gap:50px;
+  }
+  &_right_left h2{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &_right_left{
+    border-radius: 30px;
+    border: 3px solid #F00;
+    background: linear-gradient(180deg, #FFBE5C 31.17%, rgba(255, 190, 92, 0.00) 106.81%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  &_right {
+    display: flex;
+    gap:50px;
+    }
+}
+.knopka 
+{
+  display:flex;
+  gap:210px;
+  margin:0 0 0 15px;
+  &_left 
+  {
+  display:flex;
+  gap:190px;
+  }
+      &_left_left 
+      {
+        
+      }
+
+      &_left_right 
+      {
+        display: block;
+      }
+      &_left_left1 
+      {
+        display: block;
+      }
+      &_left_right1 
+      {
+        display: block;
+      }
+  &_right {
+  display:flex;
+  gap:180px;
+  }
+}
+.button {
+  padding: 16px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background: #FC6E51;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#FC6E51,7%);
+  }
+  &:active {
+    &:after {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
