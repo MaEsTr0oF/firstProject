@@ -68,71 +68,37 @@ a {
   color: black;
 }
 
-html,body {
+html, body {
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
-
 }
 
 body {
-  
-  background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(19.91%, #43D000), to(rgba(252, 255, 92, 0)));
+  background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0) 100%);
   margin: 0px auto;
-  
-}
-.container{
-    margin: 0 auto;
-    max-width: 1864px;
-  }
-@media (max-width:1864px){
-  .container{
-    max-width: 1864px;
-  }
-}
-@media (max-width:992px){
-  .container{
-    max-width: 750px;
-  }
-}
-@media (max-width:767px){
-  .container{
-    max-width: none;
-  }
-}
-@media (max-width:767px){
-  .container{
-    max-width: 767px;
-  }
-}
-.shapka {
-  width=device;
-  height: 100px;
-  border: 3px solid black;
-  background: rgba(236, 255, 13, 0.70);
-  position: sticky;
-  top: 0;
-  opacity: 70%;
-  z-index: 0;
 }
 
-.shapka__logo img {
-  
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+.container {
+  margin: 0 auto;
+  max-width: 1864px;
 }
 
 .shapka__vibor_verh {
+  position: relative;
   font-size: 280%;
   color: #010101;
   font-family: "Inter", sans-serif;
   height: 100px;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   font-weight: 400;
   line-height: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 22%;
+  gap: 25%;
 }
 
 .vibor_knopki {
@@ -141,6 +107,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 25%;
+}
+
+.shapka {
+  border: 3px solid black;
+  background: rgba(236, 255, 13, 0.7);
+  position: sticky;
+  top: 0;
+  opacity: 70%;
+  z-index: 0;
+}
+
+.shapka__logo img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .shapka__profil {
@@ -152,8 +132,12 @@ body {
 }
 
 .shapka__button {
-  margin: 0.5% 0 0 -2%;
-  
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5% 0 0 60px;
+  padding: 5px;
+  width: 200px;
   height: 80%;
   font-size: 80%;
   background: rgba(103, 156, 62, 0.5);
@@ -163,7 +147,7 @@ body {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Slideshow container */
@@ -272,16 +256,17 @@ body {
   border: 3px solid black;
   background: rgba(103, 156, 62, 0.7);
   border-radius: 20px;
-  width: 780px;
+  width: 35%;
   padding: 10px;
   margin: 10px auto;
 }
+
 .stat1 {
   font-size: 300%;
   border: 3px solid black;
   background: rgba(103, 156, 62, 0.7);
   border-radius: 20px;
-  width: 600px;
+  width: 35%;
   padding: 10px;
   margin: 10px auto;
 }
@@ -289,12 +274,17 @@ body {
 .graf {
   text-align: center;
 }
+
 .shapka__profil:hover {
   opacity: 100%;
   background: rgba(54, 146, 85, 0.6);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
+}
+
+.graf img {
+  width: 35%;
 }
 
 .shapka__uslugi:hover {
@@ -302,20 +292,19 @@ body {
   background: rgba(54, 146, 85, 0.6);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
 }
 
 .shapka__button:hover {
   opacity: 100%;
   background: rgb(54, 146, 85);
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
 }
 
 .shapka:hover {
   opacity: 100%;
   background: rgba(236, 255, 13, 0.7);
-
 }
 
 .shapka__main:hover {
@@ -327,4 +316,90 @@ body {
   -webkit-filter: drop-shadow(10px 10px 10px #222);
   filter: drop-shadow(10px 10px 10px #222);
   background-color: rgba(54, 146, 85, 0.6);
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .shapka__vibor_verh {
+    gap: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .shapka__vibor_verh {
+    gap: 5%;
+    font-size: 240%;
+  }
+  .vibor_knopki {
+    padding: 10px 0 0 0;
+  }
+}
+@media (max-width: 820px) {
+  .container {
+    max-width: 820px;
+  }
+  .shapka__vibor_verh {
+    gap: 10%;
+    font-size: 200%;
+  }
+  .stat {
+    font-size: 250%;
+    width: 78%;
+  }
+  .shapka__logo img {
+    width: 93%;
+  }
+  .shapka {
+    height: 100px;
+  }
+  .shapka__button {
+    font-size: 100%;
+    height: 80px;
+    width: 160px;
+  }
+  .vibor_knopki {
+    gap: 8%;
+    padding: 20px 0 0 0;
+  }
+  .graf img {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+  .shapka__vibor_verh {
+    gap: 0%;
+    font-size: 110%;
+    margin: 0 130px 0 0;
+  }
+  .vibor_knopki {
+    padding: 10px 0 0 0;
+  }
+  .stat {
+    font-size: 150%;
+    width: 78%;
+  }
+  .shapka__logo img {
+    width: 60%;
+  }
+  .shapka {
+    height: 60px;
+  }
+  .shapka__button {
+    height: 46px;
+    width: 100px;
+    margin: 5px -130px 0 0;
+  }
+  .vibor_knopki {
+    gap: 8%;
+  }
+  .graf img {
+    width: 80%;
+  }
 }
