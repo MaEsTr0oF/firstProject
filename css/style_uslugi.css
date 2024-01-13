@@ -444,7 +444,7 @@ body {
     padding: 10px 0 0 0;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
   .scheme {
     font-size: 240%;
   }
@@ -500,7 +500,7 @@ body {
     padding: 20px 0 0 0;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 890px) {
   .exp_left {
     width: 10%;
     gap: 50%;
