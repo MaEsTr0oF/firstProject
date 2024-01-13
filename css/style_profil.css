@@ -68,69 +68,37 @@ a {
   color: black;
 }
 
-html,body {
+html, body {
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
-.container{
-    margin: 0 auto;
-    max-width: 1864px;
-  }
-@media (max-width:1864px){
-  .container{
-    max-width: 1864px;
-  }
-}
-@media (max-width:1400px){
-  .container{
-    max-width: 1400px;
-  }
-}
-@media (max-width:992px){
-  .container{
-    max-width: 992px;
-  }
-}
-@media (max-width:767px){
-  .container{
-    max-width: 767px;
-  }
-}
+
 body {
-  background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0.00) 100%);
-  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(19.91%, #43D000), to(rgba(252, 255, 92, 0)));
+  background: linear-gradient(180deg, #43D000 19.91%, rgba(252, 255, 92, 0) 100%);
   margin: 0px auto;
-
-}
-.shapka {
-  width: 100%;
-  height: 100px;
-  border: 3px solid black;
-  background: rgba(236, 255, 13, 0.70);
-  position: sticky;
-  top: 0;
-  opacity: 70%;
-  z-index: 0;
 }
 
-.shapka__logo img {
-  
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
+.container {
+  margin: 0 auto;
+  max-width: 1864px;
 }
 
 .shapka__vibor_verh {
+  position: relative;
   font-size: 280%;
   color: #010101;
   font-family: "Inter", sans-serif;
   height: 100px;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   font-weight: 400;
   line-height: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 22%;
+  gap: 25%;
 }
 
 .vibor_knopki {
@@ -140,11 +108,23 @@ body {
   display: flex;
   gap: 25%;
 }
-.shapka__main{
-  opacity: 30%;
+
+.shapka {
+  border: 3px solid black;
+  background: rgba(236, 255, 13, 0.7);
+  position: sticky;
+  top: 0;
+  opacity: 70%;
+  z-index: 0;
 }
-.shapka__profil {
-  
+
+.shapka__logo img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.shapka__main {
+  opacity: 30%;
 }
 
 .shapka__uslugi {
@@ -152,10 +132,14 @@ body {
 }
 
 .shapka__button {
-  margin: 8px 0px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5% 0 0 60px;
+  padding: 5px;
   width: 200px;
-  height: 80px;
-  font-size: 30px;
+  height: 80%;
+  font-size: 80%;
   background: rgba(103, 156, 62, 0.5);
   border: 3px solid black;
   border-radius: 40px;
@@ -171,20 +155,19 @@ body {
   background: rgba(54, 146, 85, 0.6);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
 }
 
 .shapka__button:hover {
   opacity: 100%;
   background: rgb(54, 146, 85);
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
 }
 
 .shapka:hover {
   opacity: 100%;
   background: rgba(236, 255, 13, 0.7);
-
 }
 
 .shapka__main:hover {
@@ -192,7 +175,7 @@ body {
   background: rgba(54, 146, 85, 0.6);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
-          box-shadow: 3px 3px 7px 3px black;
+  box-shadow: 3px 3px 7px 3px black;
 }
 
 .shapka__logo img:hover {
@@ -202,7 +185,7 @@ body {
 }
 
 .FIO {
-  padding: 2% 1% 0 1.5%;
+  padding: 2% 1% 0 1%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,22 +200,24 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin: 0 2.5%;
-  font-size: 300%;
+  font-size: 280%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0px 1.8% 0 1.8%;
+  padding: 0 1.5% 0 1.5%;
   background-color: rgb(183, 218, 167);
   color: #005546;
   font-family: Century Schoolbook;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  
+}
+
+.FIO_foto img {
+  width: 100%;
 }
 
 .university {
-  padding: 2% 4% 0 0px;
-  position: relative;
+  padding: 2% 3% 0 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,14 +226,15 @@ body {
   z-index: -2;
 }
 .university_text {
+  width: 20%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0 2.5% 0 1.5%;
-  font-size: 300%;
+  margin: 0 3% 0 1%;
+  font-size: 280%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 0px 2.5% 0 2.5%;
+  padding: 10% 3%;
   background-color: rgb(183, 218, 167);
   color: #005546;
   font-family: Century Schoolbook;
@@ -258,25 +244,28 @@ body {
   z-index: -2;
 }
 
+.university_photo img {
+  width: 100%;
+}
+
 .vizov {
-  margin: 20px auto;
+  margin: 1% auto;
 }
 
 .text {
-  margin: 0 auto;
+  margin: 3% auto;
   display: block;
   background-color: rgb(183, 218, 167);
   -webkit-box-shadow: 3px 3px 7px 3px black;
           box-shadow: 3px 3px 7px 3px black;
   width: 20%;
-  font-size: 300%;
+  font-size: 280%;
   text-align: center;
   border-radius: 15px;
 }
 
 .karta {
-  display: block;
-  padding: 1.5% 0 0px 28%;
+  padding: 1% 0px 0px 30%;
 }
 
 .button {
@@ -285,7 +274,266 @@ body {
   margin-right: auto;
   background-color: rgb(195, 87, 87);
   border-radius: 30px;
-  font-size: 300%;
+  font-size: 290%;
   width: 20%;
   border: 3px solid black;
+}
+
+@media (max-width: 1280px) {
+  .FIO_text {
+    font-size: 250%;
+  }
+  .FIO_foto img {
+    width: 100%;
+  }
+  .university_text {
+    font-size: 250%;
+    width: 40%;
+    padding: 1% 3%;
+  }
+  .university_photo img {
+    width: 100%;
+  }
+  .karta {
+    padding: 1% 0px 0px 20%;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  .shapka__vibor_verh {
+    gap: 10%;
+    font-size: 250%;
+  }
+  .shapka__logo img {
+    width: 93%;
+  }
+  .shapka {
+    height: 100px;
+  }
+  .shapka__button {
+    font-size: 75%;
+    height: 80px;
+    width: 160px;
+  }
+  .vibor_knopki {
+    gap: 20%;
+    padding: 10px 0 0 0;
+  }
+}
+@media (max-width: 1050px) {
+  .FIO_text {
+    font-size: 200%;
+  }
+  .FIO_foto img {
+    width: 100%;
+  }
+  .university_text {
+    font-size: 200%;
+    width: 50%;
+    padding: 1% 3%;
+  }
+  .university_photo img {
+    width: 100%;
+  }
+  .text {
+    width: 30%;
+    font-size: 230%;
+  }
+  .karta {
+    padding: 1% 0px 0px 20%;
+  }
+  .button {
+    font-size: 250%;
+    width: 30%;
+  }
+  .container {
+    max-width: 1024px;
+  }
+  .shapka__vibor_verh {
+    gap: 5%;
+    font-size: 230%;
+  }
+  .shapka__logo img {
+    width: 93%;
+  }
+  .shapka {
+    height: 100px;
+  }
+  .shapka__button {
+    font-size: 80%;
+    height: 80px;
+    width: 160px;
+  }
+  .vibor_knopki {
+    gap: 8%;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 820px) {
+  .FIO_text {
+    font-size: 150%;
+  }
+  .post img {
+    width: 200px;
+  }
+  .university_text {
+    font-size: 150%;
+    width: 60%;
+    padding: 1% 3%;
+  }
+  .university_photo img {
+    width: 100%;
+  }
+  .text {
+    width: 50%;
+    font-size: 240%;
+  }
+  .karta {
+    margin: 5% auto;
+    max-width: 700px;
+    max-height: 400px;
+    padding: 0 10%;
+  }
+  .button {
+    font-size: 240%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .container {
+    max-width: 820px;
+  }
+  .shapka__vibor_verh {
+    gap: 10%;
+    font-size: 200%;
+  }
+  .shapka__logo img {
+    width: 93%;
+  }
+  .shapka {
+    height: 100px;
+  }
+  .shapka__button {
+    font-size: 100%;
+    height: 80px;
+    width: 160px;
+  }
+  .vibor_knopki {
+    gap: 8%;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 790px) {
+  .FIO_text {
+    font-size: 150%;
+  }
+  .post img {
+    width: 200px;
+  }
+  .university_text {
+    font-size: 150%;
+    width: 60%;
+    padding: 1% 3%;
+  }
+  .university_photo img {
+    width: 100%;
+  }
+  .text {
+    width: 50%;
+    font-size: 240%;
+  }
+  .karta {
+    margin: 5% auto;
+    max-width: 700px;
+    max-height: 400px;
+    padding: 0 10%;
+  }
+  .button {
+    font-size: 240%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+  .container {
+    max-width: 790px;
+  }
+  .shapka__vibor_verh {
+    gap: 3%;
+    font-size: 200%;
+  }
+  .shapka__logo img {
+    width: 93%;
+  }
+  .shapka {
+    height: 100px;
+  }
+  .shapka__button {
+    font-size: 100%;
+    height: 80px;
+    width: 160px;
+  }
+  .vibor_knopki {
+    gap: 4%;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .FIO_text {
+    font-size: 100%;
+  }
+  .post img {
+    width: 150px;
+  }
+  .university_text {
+    font-size: 100%;
+    width: 50%;
+    padding: 1% 3%;
+  }
+  .university_photo img {
+    width: 100%;
+  }
+  .text {
+    width: 50%;
+    font-size: 200%;
+  }
+  .karta {
+    margin: 5% auto;
+    max-width: 440px;
+    max-height: 400px;
+    padding: 0 10%;
+  }
+  .button {
+    font-size: 200%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+  }
+  .container {
+    width: 480px;
+  }
+  .shapka__vibor_verh {
+    gap: 0%;
+    font-size: 110%;
+    margin: 0 130px 0 0;
+  }
+  .vibor_knopki {
+    padding: 10px 0 0 0;
+  }
+  .shapka__logo img {
+    width: 60%;
+  }
+  .shapka {
+    height: 60px;
+  }
+  .shapka__button {
+    height: 46px;
+    width: 100px;
+    margin: 5px -130px 0 0;
+  }
+  .vibor_knopki {
+    gap: 8%;
+  }
 }

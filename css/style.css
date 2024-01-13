@@ -275,16 +275,16 @@ body {
   text-align: center;
 }
 
+.graf img {
+  width: 35%;
+}
+
 .shapka__profil:hover {
   opacity: 100%;
   background: rgba(54, 146, 85, 0.6);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 7px 3px black;
   box-shadow: 3px 3px 7px 3px black;
-}
-
-.graf img {
-  width: 35%;
 }
 
 .shapka__uslugi:hover {
